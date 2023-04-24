@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* outer_box */
+.outer_box{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left, #3ed8ff, #a8f5ff);
+}
+.outer_box .circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background-image: linear-gradient(to top right , #ffffff33, #ffffffff);
+    position: absolute;
+}
+.c1{
+    top: 100px;
+    left: 40px;
+}
+.c2{
+    bottom: 100px;
+    right: 40px;
+}
+
+
+/* inner-box */
+.inner_box{
+    width: 400px;
+    margin: 0 auto;
+    
+    /* technique to make it center vertically */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);   /* inner box ki jo height hai uska 50% uppar chala jayega */
+
+    padding: 20px 40px;
+    /* background-color: #ffffffcc; */
+    background-image: linear-gradient(to top left, #ffffffff, #ffffff33);
+    border-radius: 8px; 
+    box-shadow: 2px 2px 5px #2773a5;  
+    z-index: 2;
+    backdrop-filter: blur(18px);
+}
+
+
+/* signup-header */
+.signup-header h1{
+    font-size: 2.5rem;
+    color: #212121;
+}
+.signup-header p{
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* signup-body */
+.signup-body{
+    margin: 20px 0;
+}
+.signup-body p{
+    margin: 10px 0;
+}
+.signup-body p label{
+    display: block;
+    font-weight: bold;
+}
+.signup-body p input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cccc;
+    border-radius: 4px;
+    font-size: 1rem; /* they dont inherit font size by default so give them font size here */ 
+    margin-top: 4px;
+}
+.signup-body p input[type="submit"]{
+    background-color:#3498db;
+    border:none;
+    color: white;
+    cursor: pointer;
+}
+.signup-body p input[type="submit"]:hover{
+    background-color:#185c89; 
+}
+
+
+/* signup-footer */
+.signup-footer p{
+    color: #555;
+    text-align: center;
+}
+.signup-footer p a{
+    color: #185c89;
+}
